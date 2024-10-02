@@ -23,5 +23,8 @@
         weight = 55
         dateOfBirth = #09/03/2000#
 
+        MessageBox.Show("It is " & isMale &
+                        " that you are male" & vbCrLf & "Yes!")
+
     End Sub
 End Class
