@@ -52,4 +52,15 @@
 
 
     End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Runs immediately after the programs runs,
+        ' and before the form loads
+
+        lstOccupation.Items.Add("Writer")
+        lstOccupation.Items.Add("Actor")
+        lstOccupation.Items.Add("Painter")
+
+
+    End Sub
 End Class

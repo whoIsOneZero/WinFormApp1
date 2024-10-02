@@ -109,7 +109,7 @@ Partial Class Form1
         lstOccupation.Items.AddRange(New Object() {"Doctor", "Programmer", "Teacher", "Student", "Tinker", "Tailor", "Soldier", "Sailor"})
         lstOccupation.Location = New Point(510, 89)
         lstOccupation.Name = "lstOccupation"
-        lstOccupation.Size = New Size(131, 124)
+        lstOccupation.Size = New Size(117, 184)
         lstOccupation.TabIndex = 8
         ' 
         ' lblOccupation
