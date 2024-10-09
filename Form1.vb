@@ -63,4 +63,20 @@
 
 
     End Sub
+
+    Private Sub btnGreet_Click(sender As Object, e As EventArgs) Handles btnGreet.Click
+        Dim stCountry As String
+        stCountry = txtCountry.Text
+
+        ' send to lowercase
+        stCountry = stCountry.ToLower
+
+        If stCountry = "australia" Then
+            MessageBox.Show("Hello, Australian. How are you?")
+        ElseIf stCountry = "ghana" Then
+            MessageBox.Show("Hello, Ghanaian. How are you?")
+        Else
+            MessageBox.Show("Hello, citizen of a country. How are you?")
+        End If
+    End Sub
 End Class

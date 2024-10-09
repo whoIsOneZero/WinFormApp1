@@ -32,6 +32,9 @@ Partial Class Form1
         SubmitButton = New Button()
         lstOccupation = New ListBox()
         lblOccupation = New Label()
+        txtCountry = New TextBox()
+        countryLabel = New Label()
+        btnGreet = New Button()
         SuspendLayout()
         ' 
         ' btnStart
@@ -63,7 +66,7 @@ Partial Class Form1
         ' 
         ' txtUsername
         ' 
-        txtUsername.Location = New Point(259, 54)
+        txtUsername.Location = New Point(250, 20)
         txtUsername.Name = "txtUsername"
         txtUsername.Size = New Size(100, 23)
         txtUsername.TabIndex = 3
@@ -71,7 +74,7 @@ Partial Class Form1
         ' nameLabel
         ' 
         nameLabel.AutoSize = True
-        nameLabel.Location = New Point(262, 34)
+        nameLabel.Location = New Point(253, 0)
         nameLabel.Name = "nameLabel"
         nameLabel.Size = New Size(60, 15)
         nameLabel.TabIndex = 4
@@ -79,7 +82,7 @@ Partial Class Form1
         ' 
         ' txtLastName
         ' 
-        txtLastName.Location = New Point(259, 104)
+        txtLastName.Location = New Point(250, 70)
         txtLastName.Name = "txtLastName"
         txtLastName.Size = New Size(100, 23)
         txtLastName.TabIndex = 5
@@ -87,7 +90,7 @@ Partial Class Form1
         ' lastNameLabel
         ' 
         lastNameLabel.AutoSize = True
-        lastNameLabel.Location = New Point(262, 86)
+        lastNameLabel.Location = New Point(253, 52)
         lastNameLabel.Name = "lastNameLabel"
         lastNameLabel.Size = New Size(63, 15)
         lastNameLabel.TabIndex = 6
@@ -95,7 +98,7 @@ Partial Class Form1
         ' 
         ' SubmitButton
         ' 
-        SubmitButton.Location = New Point(274, 154)
+        SubmitButton.Location = New Point(265, 120)
         SubmitButton.Name = "SubmitButton"
         SubmitButton.Size = New Size(75, 23)
         SubmitButton.TabIndex = 7
@@ -107,25 +110,53 @@ Partial Class Form1
         lstOccupation.FormattingEnabled = True
         lstOccupation.ItemHeight = 15
         lstOccupation.Items.AddRange(New Object() {"Doctor", "Programmer", "Teacher", "Student", "Tinker", "Tailor", "Soldier", "Sailor"})
-        lstOccupation.Location = New Point(510, 89)
+        lstOccupation.Location = New Point(250, 173)
         lstOccupation.Name = "lstOccupation"
-        lstOccupation.Size = New Size(117, 184)
+        lstOccupation.Size = New Size(117, 139)
         lstOccupation.TabIndex = 8
         ' 
         ' lblOccupation
         ' 
         lblOccupation.AutoSize = True
-        lblOccupation.Location = New Point(510, 71)
+        lblOccupation.Location = New Point(250, 155)
         lblOccupation.Name = "lblOccupation"
         lblOccupation.Size = New Size(69, 15)
         lblOccupation.TabIndex = 9
         lblOccupation.Text = "Occupation"
+        ' 
+        ' txtCountry
+        ' 
+        txtCountry.Location = New Point(493, 31)
+        txtCountry.Name = "txtCountry"
+        txtCountry.Size = New Size(109, 23)
+        txtCountry.TabIndex = 10
+        ' 
+        ' countryLabel
+        ' 
+        countryLabel.AutoSize = True
+        countryLabel.Location = New Point(495, 13)
+        countryLabel.Name = "countryLabel"
+        countryLabel.Size = New Size(161, 15)
+        countryLabel.TabIndex = 11
+        countryLabel.Text = "Which country are you from?"
+        ' 
+        ' btnGreet
+        ' 
+        btnGreet.Location = New Point(507, 60)
+        btnGreet.Name = "btnGreet"
+        btnGreet.Size = New Size(75, 23)
+        btnGreet.TabIndex = 12
+        btnGreet.Text = "Greeting"
+        btnGreet.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(btnGreet)
+        Controls.Add(countryLabel)
+        Controls.Add(txtCountry)
         Controls.Add(lblOccupation)
         Controls.Add(lstOccupation)
         Controls.Add(SubmitButton)
@@ -152,5 +183,8 @@ Partial Class Form1
     Friend WithEvents SubmitButton As Button
     Friend WithEvents lstOccupation As ListBox
     Friend WithEvents lblOccupation As Label
+    Friend WithEvents txtCountry As TextBox
+    Friend WithEvents countryLabel As Label
+    Friend WithEvents btnGreet As Button
 
 End Class
