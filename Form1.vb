@@ -79,4 +79,33 @@
             MessageBox.Show("Hello, citizen of a country. How are you?")
         End If
     End Sub
+
+    Private Sub btnCheckScore_Click(sender As Object, e As EventArgs) Handles btnCheckScore.Click
+        Dim dblScore As Double
+
+        ' input validation
+        ' check if input is numeric before assignment
+        If IsNumeric(txtExamScore.Text) Then
+            dblScore = CDbl(txtExamScore.Text)
+        Else
+            MessageBox.Show("You must enter a number.")
+            Exit Sub
+        End If
+
+        ' perform checks on score
+        If dblScore > 0 And dblScore < 100 Then
+            If dblScore >= 90 Then
+                MessageBox.Show("Execellent")
+            ElseIf dblScore >= 80 Then
+                MessageBox.Show("Very Good")
+            ElseIf dblScore >= 70 Then
+                MessageBox.Show("Good")
+            Else
+                MessageBox.Show("Pass")
+            End If
+        Else
+            MessageBox.Show("Invalid score.")
+        End If
+
+    End Sub
 End Class

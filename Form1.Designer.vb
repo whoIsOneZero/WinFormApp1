@@ -35,6 +35,9 @@ Partial Class Form1
         txtCountry = New TextBox()
         countryLabel = New Label()
         btnGreet = New Button()
+        txtExamScore = New TextBox()
+        lblExamScore = New Label()
+        btnCheckScore = New Button()
         SuspendLayout()
         ' 
         ' btnStart
@@ -134,7 +137,7 @@ Partial Class Form1
         ' countryLabel
         ' 
         countryLabel.AutoSize = True
-        countryLabel.Location = New Point(495, 13)
+        countryLabel.Location = New Point(493, 13)
         countryLabel.Name = "countryLabel"
         countryLabel.Size = New Size(161, 15)
         countryLabel.TabIndex = 11
@@ -149,11 +152,39 @@ Partial Class Form1
         btnGreet.Text = "Greeting"
         btnGreet.UseVisualStyleBackColor = True
         ' 
+        ' txtExamScore
+        ' 
+        txtExamScore.Location = New Point(495, 138)
+        txtExamScore.Name = "txtExamScore"
+        txtExamScore.Size = New Size(100, 23)
+        txtExamScore.TabIndex = 13
+        ' 
+        ' lblExamScore
+        ' 
+        lblExamScore.AutoSize = True
+        lblExamScore.Location = New Point(496, 120)
+        lblExamScore.Name = "lblExamScore"
+        lblExamScore.Size = New Size(141, 15)
+        lblExamScore.TabIndex = 14
+        lblExamScore.Text = "What is your exam score?"
+        ' 
+        ' btnCheckScore
+        ' 
+        btnCheckScore.Location = New Point(507, 167)
+        btnCheckScore.Name = "btnCheckScore"
+        btnCheckScore.Size = New Size(75, 23)
+        btnCheckScore.TabIndex = 15
+        btnCheckScore.Text = "Check Score"
+        btnCheckScore.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(btnCheckScore)
+        Controls.Add(lblExamScore)
+        Controls.Add(txtExamScore)
         Controls.Add(btnGreet)
         Controls.Add(countryLabel)
         Controls.Add(txtCountry)
@@ -186,5 +217,8 @@ Partial Class Form1
     Friend WithEvents txtCountry As TextBox
     Friend WithEvents countryLabel As Label
     Friend WithEvents btnGreet As Button
+    Friend WithEvents txtExamScore As TextBox
+    Friend WithEvents lblExamScore As Label
+    Friend WithEvents btnCheckScore As Button
 
 End Class
