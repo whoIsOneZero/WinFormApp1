@@ -38,6 +38,8 @@ Partial Class Form1
         txtExamScore = New TextBox()
         lblExamScore = New Label()
         btnCheckScore = New Button()
+        txtCheckTemp = New TextBox()
+        btnCheckTemp = New Button()
         SuspendLayout()
         ' 
         ' btnStart
@@ -177,11 +179,29 @@ Partial Class Form1
         btnCheckScore.Text = "Check Score"
         btnCheckScore.UseVisualStyleBackColor = True
         ' 
+        ' txtCheckTemp
+        ' 
+        txtCheckTemp.Location = New Point(471, 240)
+        txtCheckTemp.Name = "txtCheckTemp"
+        txtCheckTemp.Size = New Size(175, 23)
+        txtCheckTemp.TabIndex = 16
+        ' 
+        ' btnCheckTemp
+        ' 
+        btnCheckTemp.Location = New Point(493, 275)
+        btnCheckTemp.Name = "btnCheckTemp"
+        btnCheckTemp.Size = New Size(130, 37)
+        btnCheckTemp.TabIndex = 17
+        btnCheckTemp.Text = "Check Temperature"
+        btnCheckTemp.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(btnCheckTemp)
+        Controls.Add(txtCheckTemp)
         Controls.Add(btnCheckScore)
         Controls.Add(lblExamScore)
         Controls.Add(txtExamScore)
@@ -220,5 +240,7 @@ Partial Class Form1
     Friend WithEvents txtExamScore As TextBox
     Friend WithEvents lblExamScore As Label
     Friend WithEvents btnCheckScore As Button
+    Friend WithEvents txtCheckTemp As TextBox
+    Friend WithEvents btnCheckTemp As Button
 
 End Class

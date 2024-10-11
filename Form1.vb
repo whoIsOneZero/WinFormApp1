@@ -108,4 +108,22 @@
         End If
 
     End Sub
+
+    Private Sub btnCheckTemp_Click(sender As Object, e As EventArgs) Handles btnCheckTemp.Click
+        Dim intTemperature As Integer
+        intTemperature = CInt(txtCheckTemp.Text)
+
+        Select Case intTemperature
+            Case Is = 0
+                MessageBox.Show("Freezing")
+            Case Is < 0
+                MessageBox.Show("Sub zero")
+            Case 1 To 10
+                MsgBox("Cold")
+            Case 37, 38, 39, 40
+                MessageBox.Show("Some temp.")
+            Case Else
+                MessageBox.Show("Hot")
+        End Select
+    End Sub
 End Class
