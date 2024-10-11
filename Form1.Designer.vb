@@ -40,6 +40,7 @@ Partial Class Form1
         btnCheckScore = New Button()
         txtCheckTemp = New TextBox()
         btnCheckTemp = New Button()
+        btnCounter = New Button()
         SuspendLayout()
         ' 
         ' btnStart
@@ -156,7 +157,7 @@ Partial Class Form1
         ' 
         ' txtExamScore
         ' 
-        txtExamScore.Location = New Point(495, 138)
+        txtExamScore.Location = New Point(502, 121)
         txtExamScore.Name = "txtExamScore"
         txtExamScore.Size = New Size(100, 23)
         txtExamScore.TabIndex = 13
@@ -164,7 +165,7 @@ Partial Class Form1
         ' lblExamScore
         ' 
         lblExamScore.AutoSize = True
-        lblExamScore.Location = New Point(496, 120)
+        lblExamScore.Location = New Point(491, 103)
         lblExamScore.Name = "lblExamScore"
         lblExamScore.Size = New Size(141, 15)
         lblExamScore.TabIndex = 14
@@ -172,7 +173,7 @@ Partial Class Form1
         ' 
         ' btnCheckScore
         ' 
-        btnCheckScore.Location = New Point(507, 167)
+        btnCheckScore.Location = New Point(512, 150)
         btnCheckScore.Name = "btnCheckScore"
         btnCheckScore.Size = New Size(75, 23)
         btnCheckScore.TabIndex = 15
@@ -181,25 +182,35 @@ Partial Class Form1
         ' 
         ' txtCheckTemp
         ' 
-        txtCheckTemp.Location = New Point(471, 240)
+        txtCheckTemp.Location = New Point(479, 207)
         txtCheckTemp.Name = "txtCheckTemp"
         txtCheckTemp.Size = New Size(175, 23)
         txtCheckTemp.TabIndex = 16
         ' 
         ' btnCheckTemp
         ' 
-        btnCheckTemp.Location = New Point(493, 275)
+        btnCheckTemp.Location = New Point(502, 236)
         btnCheckTemp.Name = "btnCheckTemp"
         btnCheckTemp.Size = New Size(130, 37)
         btnCheckTemp.TabIndex = 17
         btnCheckTemp.Text = "Check Temperature"
         btnCheckTemp.UseVisualStyleBackColor = True
         ' 
+        ' btnCounter
+        ' 
+        btnCounter.Location = New Point(527, 310)
+        btnCounter.Name = "btnCounter"
+        btnCounter.Size = New Size(90, 25)
+        btnCounter.TabIndex = 18
+        btnCounter.Text = "Press Counter"
+        btnCounter.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(btnCounter)
         Controls.Add(btnCheckTemp)
         Controls.Add(txtCheckTemp)
         Controls.Add(btnCheckScore)
@@ -242,5 +253,6 @@ Partial Class Form1
     Friend WithEvents btnCheckScore As Button
     Friend WithEvents txtCheckTemp As TextBox
     Friend WithEvents btnCheckTemp As Button
+    Friend WithEvents btnCounter As Button
 
 End Class

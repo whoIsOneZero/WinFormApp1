@@ -1,10 +1,12 @@
 ﻿Public Class Form1
+    ' Printing or displaying
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnStart.Click
 
         MsgBox("Hello World!")
         MessageBox.Show("another message")
     End Sub
 
+    ' Data types, string contatenation
     Private Sub varButton_Click(sender As Object, e As EventArgs) Handles varButton.Click
         Dim firstName As String
         Dim age As Integer
@@ -28,6 +30,7 @@
 
     End Sub
 
+    ' Taking user input
     Private Sub userInput_Click(sender As Object, e As EventArgs) Handles userInput.Click
         Dim userName As String
 
@@ -37,6 +40,8 @@
 
     End Sub
 
+    ' More string operations
+    ' List box
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles SubmitButton.Click
         Dim stUserName As String
         Dim stLastName As String
@@ -64,6 +69,7 @@
 
     End Sub
 
+    ' If/else statements
     Private Sub btnGreet_Click(sender As Object, e As EventArgs) Handles btnGreet.Click
         Dim stCountry As String
         stCountry = txtCountry.Text
@@ -109,6 +115,7 @@
 
     End Sub
 
+    ' Select case
     Private Sub btnCheckTemp_Click(sender As Object, e As EventArgs) Handles btnCheckTemp.Click
         Dim intTemperature As Integer
         intTemperature = CInt(txtCheckTemp.Text)
@@ -125,5 +132,18 @@
             Case Else
                 MessageBox.Show("Hot")
         End Select
+    End Sub
+
+    Private Sub btnCounter_Click(sender As Object, e As EventArgs) Handles btnCounter.Click
+
+        Dim intCount As Integer
+
+        For intCount = 1 To 10 Step 2
+            ' MsgBox("You have pressed the button " & intCount & " times")
+            Beep()
+
+            ' pause for 3 secs
+            Threading.Thread.Sleep(3000)
+        Next
     End Sub
 End Class
