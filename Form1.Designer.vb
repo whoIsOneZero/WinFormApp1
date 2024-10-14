@@ -41,6 +41,8 @@ Partial Class Form1
         txtCheckTemp = New TextBox()
         btnCheckTemp = New Button()
         btnCounter = New Button()
+        btnCountUp = New Button()
+        btnCountToTen = New Button()
         SuspendLayout()
         ' 
         ' btnStart
@@ -72,7 +74,7 @@ Partial Class Form1
         ' 
         ' txtUsername
         ' 
-        txtUsername.Location = New Point(250, 20)
+        txtUsername.Location = New Point(184, 24)
         txtUsername.Name = "txtUsername"
         txtUsername.Size = New Size(100, 23)
         txtUsername.TabIndex = 3
@@ -80,7 +82,7 @@ Partial Class Form1
         ' nameLabel
         ' 
         nameLabel.AutoSize = True
-        nameLabel.Location = New Point(253, 0)
+        nameLabel.Location = New Point(187, 4)
         nameLabel.Name = "nameLabel"
         nameLabel.Size = New Size(60, 15)
         nameLabel.TabIndex = 4
@@ -88,7 +90,7 @@ Partial Class Form1
         ' 
         ' txtLastName
         ' 
-        txtLastName.Location = New Point(250, 70)
+        txtLastName.Location = New Point(184, 74)
         txtLastName.Name = "txtLastName"
         txtLastName.Size = New Size(100, 23)
         txtLastName.TabIndex = 5
@@ -96,7 +98,7 @@ Partial Class Form1
         ' lastNameLabel
         ' 
         lastNameLabel.AutoSize = True
-        lastNameLabel.Location = New Point(253, 52)
+        lastNameLabel.Location = New Point(187, 56)
         lastNameLabel.Name = "lastNameLabel"
         lastNameLabel.Size = New Size(63, 15)
         lastNameLabel.TabIndex = 6
@@ -104,7 +106,7 @@ Partial Class Form1
         ' 
         ' SubmitButton
         ' 
-        SubmitButton.Location = New Point(265, 120)
+        SubmitButton.Location = New Point(199, 124)
         SubmitButton.Name = "SubmitButton"
         SubmitButton.Size = New Size(75, 23)
         SubmitButton.TabIndex = 7
@@ -116,7 +118,7 @@ Partial Class Form1
         lstOccupation.FormattingEnabled = True
         lstOccupation.ItemHeight = 15
         lstOccupation.Items.AddRange(New Object() {"Doctor", "Programmer", "Teacher", "Student", "Tinker", "Tailor", "Soldier", "Sailor"})
-        lstOccupation.Location = New Point(250, 173)
+        lstOccupation.Location = New Point(184, 177)
         lstOccupation.Name = "lstOccupation"
         lstOccupation.Size = New Size(117, 139)
         lstOccupation.TabIndex = 8
@@ -124,7 +126,7 @@ Partial Class Form1
         ' lblOccupation
         ' 
         lblOccupation.AutoSize = True
-        lblOccupation.Location = New Point(250, 155)
+        lblOccupation.Location = New Point(184, 159)
         lblOccupation.Name = "lblOccupation"
         lblOccupation.Size = New Size(69, 15)
         lblOccupation.TabIndex = 9
@@ -132,7 +134,7 @@ Partial Class Form1
         ' 
         ' txtCountry
         ' 
-        txtCountry.Location = New Point(493, 31)
+        txtCountry.Location = New Point(349, 24)
         txtCountry.Name = "txtCountry"
         txtCountry.Size = New Size(109, 23)
         txtCountry.TabIndex = 10
@@ -140,7 +142,7 @@ Partial Class Form1
         ' countryLabel
         ' 
         countryLabel.AutoSize = True
-        countryLabel.Location = New Point(493, 13)
+        countryLabel.Location = New Point(349, 6)
         countryLabel.Name = "countryLabel"
         countryLabel.Size = New Size(161, 15)
         countryLabel.TabIndex = 11
@@ -148,7 +150,7 @@ Partial Class Form1
         ' 
         ' btnGreet
         ' 
-        btnGreet.Location = New Point(507, 60)
+        btnGreet.Location = New Point(363, 53)
         btnGreet.Name = "btnGreet"
         btnGreet.Size = New Size(75, 23)
         btnGreet.TabIndex = 12
@@ -157,7 +159,7 @@ Partial Class Form1
         ' 
         ' txtExamScore
         ' 
-        txtExamScore.Location = New Point(502, 121)
+        txtExamScore.Location = New Point(358, 114)
         txtExamScore.Name = "txtExamScore"
         txtExamScore.Size = New Size(100, 23)
         txtExamScore.TabIndex = 13
@@ -165,7 +167,7 @@ Partial Class Form1
         ' lblExamScore
         ' 
         lblExamScore.AutoSize = True
-        lblExamScore.Location = New Point(491, 103)
+        lblExamScore.Location = New Point(347, 96)
         lblExamScore.Name = "lblExamScore"
         lblExamScore.Size = New Size(141, 15)
         lblExamScore.TabIndex = 14
@@ -173,7 +175,7 @@ Partial Class Form1
         ' 
         ' btnCheckScore
         ' 
-        btnCheckScore.Location = New Point(512, 150)
+        btnCheckScore.Location = New Point(368, 143)
         btnCheckScore.Name = "btnCheckScore"
         btnCheckScore.Size = New Size(75, 23)
         btnCheckScore.TabIndex = 15
@@ -182,14 +184,14 @@ Partial Class Form1
         ' 
         ' txtCheckTemp
         ' 
-        txtCheckTemp.Location = New Point(479, 207)
+        txtCheckTemp.Location = New Point(335, 200)
         txtCheckTemp.Name = "txtCheckTemp"
         txtCheckTemp.Size = New Size(175, 23)
         txtCheckTemp.TabIndex = 16
         ' 
         ' btnCheckTemp
         ' 
-        btnCheckTemp.Location = New Point(502, 236)
+        btnCheckTemp.Location = New Point(358, 229)
         btnCheckTemp.Name = "btnCheckTemp"
         btnCheckTemp.Size = New Size(130, 37)
         btnCheckTemp.TabIndex = 17
@@ -198,18 +200,38 @@ Partial Class Form1
         ' 
         ' btnCounter
         ' 
-        btnCounter.Location = New Point(527, 310)
+        btnCounter.Location = New Point(383, 303)
         btnCounter.Name = "btnCounter"
         btnCounter.Size = New Size(90, 25)
         btnCounter.TabIndex = 18
         btnCounter.Text = "Press Counter"
         btnCounter.UseVisualStyleBackColor = True
         ' 
+        ' btnCountUp
+        ' 
+        btnCountUp.Location = New Point(358, 350)
+        btnCountUp.Name = "btnCountUp"
+        btnCountUp.Size = New Size(143, 64)
+        btnCountUp.TabIndex = 19
+        btnCountUp.Text = "Count Up Odd or Even"
+        btnCountUp.UseVisualStyleBackColor = True
+        ' 
+        ' btnCountToTen
+        ' 
+        btnCountToTen.Location = New Point(531, 18)
+        btnCountToTen.Name = "btnCountToTen"
+        btnCountToTen.Size = New Size(95, 46)
+        btnCountToTen.TabIndex = 20
+        btnCountToTen.Text = "Count to 10"
+        btnCountToTen.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(btnCountToTen)
+        Controls.Add(btnCountUp)
         Controls.Add(btnCounter)
         Controls.Add(btnCheckTemp)
         Controls.Add(txtCheckTemp)
@@ -254,5 +276,7 @@ Partial Class Form1
     Friend WithEvents txtCheckTemp As TextBox
     Friend WithEvents btnCheckTemp As Button
     Friend WithEvents btnCounter As Button
+    Friend WithEvents btnCountUp As Button
+    Friend WithEvents btnCountToTen As Button
 
 End Class

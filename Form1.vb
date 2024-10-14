@@ -146,4 +146,20 @@
             Threading.Thread.Sleep(3000)
         Next
     End Sub
+
+    Private Sub btnCountUp_Click(sender As Object, e As EventArgs) Handles btnCountUp.Click
+
+    End Sub
+
+    Private Sub btnCountToTen_Click(sender As Object, e As EventArgs) Handles btnCountToTen.Click
+        Dim intCounter As Integer
+
+        intCounter = 0
+
+        'Do Until or Do ... Loop Until
+        Do While intCounter <= 5
+            intCounter = intCounter + 1
+            MessageBox.Show("You've counted " & intCounter & "times")
+        Loop
+    End Sub
 End Class
